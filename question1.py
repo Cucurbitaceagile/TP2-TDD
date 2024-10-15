@@ -1,8 +1,7 @@
-def affiche(n):
-    
+def affiche(n1, n2):
     result = ""
-    for i in range(1, n + 1):
-        if i % 15 == 0:
+    for i in range(n1, n2 + 1):
+        if i % 3 == 0 and i % 5 == 0:
             result += "FrisBee"
         elif i % 3 == 0:
             result += "Fizz"
@@ -12,4 +11,6 @@ def affiche(n):
             result += str(i)
     print(result)
 
-affiche(15)
+# Exemple d'exécution
+affiche(5, 10)  # BuzzFizz78FizzBuzz
+affiche(10, 16) # Buzz11Fizz1314FrisBee16
